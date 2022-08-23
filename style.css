@@ -70,8 +70,11 @@ input {
 li {
   list-style-image: url(./li.png);
   list-style-position: inside;
+  /* display: inline; */
 }
-ul {
-  display: inline;
-  /* list-style-type: circle; */
+button {
+  width: 15em;
+  height: 5em;
+  border: 0.1em solid rgba(196, 196, 196, 1);
+  background-color: rgba(196, 196, 196, 1);
 }
