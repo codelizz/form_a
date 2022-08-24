@@ -13,16 +13,44 @@
     />
   </head>
   <body>
-    <h1>Sign in or create an account</h1>
-    <div id="main">
-      <p>*Indidcates required field</p>
-    </div>
-    <form action="#" method="get">
-      <label for="Username">*Username or email address</label>
-      <input type="text" name="username" id="username" />
+    <div id="body">
 
-      <label for="password">*Password</label>
-      <input type="password" name="password" id="signin_pass" />
-    </form>
+      <div id="logo"></div>
+      <hr />
+      <div id="contain_signin">
+        <section id="first">
+          <h1 id="sign">Sign in or create an account</h1>
+          <div id="main">
+            <p>*Indidcates required field</p>
+          </div>
+          <form action="#" method="get">
+            <label for="Username"> <pre>*User name or email address</pre></label>
+            <input type="text" name="username" id="username"  required/>
+            
+            <div id="show">
+              <label for="password">*Password</label>
+              <span><img src="hide.png" alt="eye" />Hide</span>
+            </div>
+            <input type="password" name="password" id="signin_pass"  required/>
+            
+            <div id="check">
+              <img src="./check.png" alt="A check nox" />
+            </p>Keep me sign in</p>
+            <img src="./q.png" alt="A question mark."></div>
+          </form>
+          
+          <p><a href="reset username">Forgot username?</a></p>
+          <p><a href="resetpassword">Forgot password?</a></p>
+          <p id="alert">Checking this box will reduce the number of times you"re asked to sign in. To keep your account secure, use this option only on your personal devices.</p>
+        </div>
+        <button><a href="login.html"></a>Sign in</button>
+        
+      </section>
+      <section id="second">
+        <h3>Join our rewards</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus</p>
+      </section>
+    </div>
+    </div>
   </body>
 </html>
