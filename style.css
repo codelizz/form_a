@@ -5,7 +5,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: rgb(245, 245, 245);
 }
 #container {
   display: flex;
@@ -66,7 +66,7 @@ label {
   width: 2.75em;
   display: block;
 }
-#show {
+.show {
   display: flex;
   justify-content: space-between;
 }
@@ -122,10 +122,6 @@ button {
 #contain_signin {
   width: 65%;
   height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
   border: 0.3rem solid red;
 }
 #sign {
@@ -138,18 +134,22 @@ button {
 }
 #alert {
   color: rgba(255, 255, 255, 1);
+  width: 20em;
+  height: 8em;
+  right: 0;
   background-color: rgba(51, 51, 51, 1);
   border-radius: 1rem;
+  padding: 0/75rem 0.5rem;
 }
 #first {
   width: 55%;
   height: 50%;
-  /* margin: 0, 2em, 3em, 0; */
 }
 #second {
   width: 55%;
   height: 45%;
   color: rgb(17, 17, 17);
+  background-color: rgba(196, 196, 196, 0.4);
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.9rem;
@@ -157,4 +157,16 @@ button {
 #second h3,
 p {
   text-align: center;
+}
+#join {
+  width: 12em;
+  height: 3em;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.9rem;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: rgb(245, 245, 245);
+  border-radius: 2.5em;
 }
