@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp Page</title>
     <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +21,7 @@
       <section>
         <header>
           <h1>Welcome to Design Community</h1>
-          <p>Already have an Account? <a href="#">Log in</a></p>
+          <p>Already have an Account? <a href="signin.html">Log in</a></p>
         </header>
         <form action="#" method="get" validate>
           <label for="email">Email</label>
@@ -30,7 +32,8 @@
 
           <div class="show">
             <label for="password">Password</label>
-            <span><img src="hide.png" alt="eye" />show</span>
+            <span><i class="fa-solid fa-eye"></i>Hide</span>
+              <span><i class="fa-solid fa-eye-slash"></i>Show</span>
           </div>
           <input type="password" name="password" id="pass" required />
         </form>
@@ -58,10 +61,8 @@
           </div>
         </ul>
         <div id="check">
-        <img src="./check.png" alt="A check nox" />
-        </p>I want to receive emails
-        about the product, feature updates, events, and  <br> marketing promotions.
-          <p>
+            
+      </p><i class="fa-solid fa-square-check"></i> I want to receive emails about the product, feature updates, events, and  <br> marketing promotions.<p>
         </div>
         <p>
           By creating an account, you agree to the
@@ -70,7 +71,7 @@
         </p>
 
         <button><a href="signup.html"></a>Create an account</button>
-        <p>Already have an Account? <a href="login.html">log in</a></p>
+        <p>Already have an Account? <a href="signin.html">log in</a></p>
       </section>
     </div>
     <script src="./script.js"></script>

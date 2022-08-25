@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn Page</title>
+    <link rel="stylesheet" href="./style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="body">
+      <div id="logo"></div>
+      <hr />
+      <div id="contain_signin">
+        <section id="first">
+          <header>
+            <h1 id="h1">Sign in or create an account</h1>
+            <p>*Indidcates required field</p>
+          </header>
+          <div id="main">
+          </div>
+          <form action="#" method="get">
+            <label for="Username"> <pre>*User name or email address</pre></label>
+            <input type="text" name="username" id="username"  required/>
+            
+            <div class="show">
+              <label for="password">*Password</label>
+              <span><i class="fa-solid fa-eye"></i>Hide</span>
+              <span><i class="fa-solid fa-eye-slash"></i>Show</span>
+            </div>
+            <input type="password" name="password" id="signin_pass"  pattern="^(?=.*\d)(?=.*[!@#($%^&)*])(?=.*[a-z])(?=.*[A-Z]).{8,}$"/>
+            
+            <div id="important">
+              <div>
+              </p><i class="fa-solid fa-square-check"></i>Keep me sign in    <i class="fa-solid fa-circle-question"></i></p>             
+              <p><a href="reset username">Forgot username?</a></p>
+              <p><a href="resetpassword">Forgot password?</a></p>
+              </div>
+              <p id="alert">Checking this box will reduce the number of times you"re asked to sign in. To keep your account secure, use this option only on your personal devices.</p>
+            </div>
+              <button id="signin"><a href="login.html"></a>Sign in</button>   
+            </form>
+          </div>
+        </section>
+        
+        <section id="second">
+        <h3>Join our rewards</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus</p>
+
+        <button id="join"><a href="login.html"></a>Join now</button>
+      </section>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
