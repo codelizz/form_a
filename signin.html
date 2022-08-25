@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="body">
+      <div id="logo"></div>
+      <hr />
+      <div id="contain_signin">
+        <section id="first">
+          <header>
+            <h1 id="h1">Sign in or create an account</h1>
+            <p>*Indidcates required field</p>
+          </header>
+          <div id="main">
+          </div>
+          <form action="#" method="get">
+            <label for="Username"> <pre>*User name or email address</pre></label>
+            <input type="text" name="username" id="username"  required/>
+            
+            <div class="show">
+              <label for="password">*Password</label>
+              <span><img src="hide.png" alt="eye" />Hide</span>
+            </div>
+            <input type="password" name="password" id="signin_pass"  required/>
+            
+            <div id="important">
+              <img src="./check.png" alt="A check nox" />
+            </p>Keep me sign in</p>
+            <img src="./q.png" alt="A question mark.">
+            <p><a href="reset username">Forgot username?</a></p>
+            <p><a href="resetpassword">Forgot password?</a></p>            
+          </div>
+          <p id="alert">Checking this box will reduce the number of times you"re asked to sign in. To keep your account secure, use this option only on your personal devices.</p>
+          <button id="signin"><a href="login.html"></a>Sign in</button>   
+        </form>
+        </div>
+      </section>
+ 
+      <section id="second">
+        <h3>Join our rewards</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus</p>
+
+        <button id="join"><a href="login.html"></a>Join now</button>
+      </section>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
