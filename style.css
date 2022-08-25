@@ -88,14 +88,17 @@ label {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.3rem;
-  padding: 1.9rem, 1rem, 1rem, 0;
+  padding: 1.9rem, 0, 1rem, 0;
   margin-top: 0.5rem, 1rem;
   border: 3px solid green;
 }
-#check img {
-  width: 1.2rem;
-  height: 1.2rem;
-  margin: 0.6875rem, 0.6875rem;
+i {
+  width: 4em;
+  height: 4em;
+  margin: 0.6875rem, 0, 0.6875rem, 0.5rem;
+}
+span .-fa-eye {
+  display: none;
 }
 .list {
   width: 30%;
@@ -111,7 +114,6 @@ li {
   display: inline-block;
   padding: 0.2rem;
   font-size: 1rem;
-  /* line-height: 1rem; */
   margin-bottom: 0.5rem;
 }
 
@@ -162,19 +164,28 @@ button {
   width: 55%;
   height: 45%;
   color: rgb(17, 17, 17);
-  /* background-color: rgba(196, 196, 196, 0.4); */
   background-color: rgba(102, 102, 102, 0.045);
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.9rem;
+  border-radius: 1.5rem;
+}
+h3 {
+  font-size: 2rem;
 }
 #h1 {
   text-align: center;
 }
-#important + img {
-  width: 12em;
-  height: 2.5em;
+#important {
+  width: 60em;
+  height: 450em;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+div + img {
+  width: 13rem;
+  height: 3rem;
 }
 #signin {
   width: 8em;
