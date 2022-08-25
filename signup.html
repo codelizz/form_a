@@ -3,56 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up Page</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500,600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div id="body">
-
+    <div id="container">
       <div id="logo"></div>
-      <hr />
-      <div id="contain_signin">
-        <section id="first">
-          <h1 id="sign">Sign in or create an account</h1>
-          <div id="main">
-            <p>*Indidcates required field</p>
-          </div>
-          <form action="#" method="get">
-            <label for="Username"> <pre>*User name or email address</pre></label>
-            <input type="text" name="username" id="username"  required/>
-            
-            <div class="show">
-              <label for="password">*Password</label>
-              <span><img src="hide.png" alt="eye" />Hide</span>
-            </div>
-            <input type="password" name="password" id="signin_pass"  required/>
-            
-            <div id="check">
-              <img src="./check.png" alt="A check nox" />
-            </p>Keep me sign in</p>
-            <img src="./q.png" alt="A question mark."></div>
-          </form>
-          
-          <p><a href="reset username">Forgot username?</a></p>
-          <p><a href="resetpassword">Forgot password?</a></p>
-          <p id="alert">Checking this box will reduce the number of times you"re asked to sign in. To keep your account secure, use this option only on your personal devices.</p>
-        </div>
-        <button><a href="login.html"></a>Sign in</button>
-        
-      </section>
-      <section id="second">
-        <h3>Join our rewards</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus</p>
+      <div id="picture"><img src="./login_img.png" height="675em" alt="A cool picture" /></div>
+      <section>
+        <header>
+          <h1>Welcome to Design Community</h1>
+          <p>Already have an Account? <a href="#">Log in</a></p>
+        </header>
+        <form action="#" method="get" validate>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
 
-        <button id="join"><a href="login.html"></a>Join now</button>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required />
+
+          <div class="show">
+            <label for="password">Password</label>
+            <span><img src="hide.png" alt="eye" />show</span>
+          </div>
+          <input type="password" name="password" id="pass" required />
+        </form>
+        <ul>
+          <div class="list">
+            <li>
+              <img src="li.png" alt="List-style-type" /> Use 8 or more characters
+            </li>
+            <li>
+              <img src="li.png" alt="List-style-type" /> One special character
+            </li>
+          </div>
+
+          <div class="list">
+            <li>
+              <img src="li.png" alt="List-style-type" /> One Uppercase character
+            </li>
+            <li><img src="li.png" alt="List-style-type"/> One number.</li>
+          </div>
+
+          <div class="list">
+              <li>
+                <img src="li.png" alt="List-style-type" /> One lowercase character
+              </li>
+          </div>
+        </ul>
+        <div id="check">
+        <img src="./check.png" alt="A check nox" />
+        </p>I want to receive emails
+        about the product, feature updates, events, and  <br> marketing promotions.
+          <p>
+        </div>
+        <p>
+          By creating an account, you agree to the
+          <a href="terms and use">Terms of use</a>and
+          <a href="policy">Policy.</a>
+        </p>
+
+        <button><a href="signup.html"></a>Create an account</button>
+        <p>Already have an Account? <a href="login.html">log in</a></p>
       </section>
-    </div>
     </div>
     <script src="./script.js"></script>
   </body>
