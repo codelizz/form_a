@@ -13,11 +13,11 @@ body {
   flex-direction: row-reverse;
 }
 #logo {
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
   margin: 1.1em;
-  left: 0;
-  position: absolute;
+  /* left: 0; */
+  /* position: absolute; */
   background-color: rgba(196, 196, 196, 1);
   border: 0.1em solid rgba(196, 196, 196, 1);
   border-radius: 50%;
@@ -29,14 +29,18 @@ body {
 
 section {
   width: 60%;
-  height: 30em;
+  height: inherit;
   margin-top: 2.5rem;
   margin-left: 5.5em;
 }
 h1 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0.25em;
+}
+h2 {
+  font-weight: 600;
+  margin-bottom: 2.5em;
 }
 header p {
   margin-top: 0;
@@ -62,15 +66,18 @@ input {
   margin-bottom: 1.375em;
   border-radius: 0.75em;
 }
+.input {
+  width: 31.25rem;
+  height: 3.5rem;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  border-radius: 0.75rem;
+}
 [type~="password"] {
   margin-bottom: 0.3rem;
 }
-label {
-  height: 1.2em;
-  width: 2.2em;
-  display: block;
-}
 .show {
+  width: 31.25rem;
+  height: 1.6875rem;
   display: flex;
   justify-content: space-between;
 }
@@ -79,9 +86,13 @@ label {
   height: 4rem;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   margin-bottom: 2rem;
+
+  width: 193px;
+  height: 40px;
 }
 #check p {
   color: rgb(51, 51, 51);
@@ -90,7 +101,6 @@ label {
   line-height: 1.3rem;
   padding: 1.9rem, 1rem, 1rem, 0;
   margin-top: 0.5rem, 1rem;
-  border: 3px solid green;
 }
 #check img {
   width: 1.2rem;
@@ -99,11 +109,12 @@ label {
 }
 
 .list {
-  width: 30%;
+  width: 28%;
   line-height: 0.8rem;
   margin-bottom: 1rem;
 }
 ul {
+  width: 49sem;
   display: flex;
   margin: 0;
   padding: 0;
@@ -120,7 +131,7 @@ p a {
   padding: 0.5rem;
   margin-top: 0.8rem;
 }
-button {
+#submit {
   width: 10em;
   height: 2.5em;
   font-weight: 500;
@@ -132,83 +143,91 @@ button {
   border: 0.1em solid rgba(196, 196, 196, 1);
   border-radius: 2.5em;
   padding: 0.4rem;
+  margin-bottom: 0rem;
 }
 
 /* +++++++++++++++++++++++
-  The Signin Oage
+  The Signin Page
   +++++++++++++++++++++++++ */
-#body {
-  margin: 13em, 20em, 10em, 0;
+#logo-bar {
+  height: 4.5rem;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.0625rem solid rgba(102, 102, 102, 0.25);
+  display: flex;
 }
-#contain_signin {
-  width: 65%;
-  height: 80%;
-  border: 0.3rem solid red;
+
+#logo-bar span {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #c4c4c4;
 }
-#alert {
-  color: rgba(255, 255, 255, 1);
-  width: 20em;
-  height: 8em;
-  right: 0;
-  background-color: rgba(51, 51, 51, 1);
-  border-radius: 1rem;
-  padding: 0/75rem 0.5rem;
+
+#signin {
+  width: 44.7rem;
+  margin: auto;
+  padding: 0;
 }
-#first {
-  width: 55%;
-  height: 50%;
+#signin h1 {
+  text-align: center;
 }
-#second {
-  width: 55%;
-  height: 45%;
-  color: rgb(17, 17, 17);
-  background-color: rgba(102, 102, 102, 0.045);
+#join {
+  background-color: rgba(196, 196, 196, 0.151);
+  /* text-align: center; */
+  border-radius: 1.5rem;
+  padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#join-content {
+  width: 22.8125rem;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+#join-content h2 {
+  margin: 0;
+  color: #111111;
+  font-size: 1.25rem;
   font-weight: 500;
   font-size: 1.25rem;
-  line-height: 1.9rem;
-  border-radius: 1.5rem;
+  line-height: 1.875rem;
 }
-
-#h1 {
-  text-align: center;
+#para {
+  width: 21rem;
+  height: 6rem;
+  margin: 1rem;
 }
-#important {
-  width: 60em;
-  height: 450em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#join-content p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
 }
-
-div + img {
-  width: 13rem;
+#link {
+  width: 11.25rem;
   height: 3rem;
-}
-#signin {
-  width: 8em;
-  height: 3em;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-  left: 0;
-  float: right;
-  color: rgb(255, 255, 255);
-  background-color: rgba(196, 196, 196, 1);
-  border: 0.1em solid rgba(196, 196, 196, 1);
+  /* width: 11.25rem;
+  height: 3.5rem; */
+  border: 0.0625rem solid rgb(17, 17, 17);
   border-radius: 2.5em;
   padding: 0.4rem;
+  margin: auto;
 }
-
-#join {
-  width: 12em;
-  height: 3em;
-  color: rgb(51, 51, 51);
+#join-content a {
+  width: 5.5625rem;
+  height: 1.875rem;
+  color: rgb(17, 17, 17);
+  /* border: 0.0625rem solid rgb(17, 17, 17);
+  border-radius: 2rem; */
+  text-decoration: none;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.9rem;
-  text-align: center;
-  background-color: rgb(245, 245, 245);
-  border: rgb(245, 245, 245);
-  border-radius: 2.5em;
+  line-height: 1.875rem;
 }
