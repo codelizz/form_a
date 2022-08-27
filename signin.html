@@ -29,7 +29,19 @@
     </div>
     <article id="signin">
       <h1>Sign in or create an account</h1>
-      <form action="#" method="post"></form>
+      <form action="#" method="post">
+        <p>*indicates required field</p>
+        <label for="username">*User name or email address</label>
+        <input type="text" name="username" id="user" required />
+
+        <label for="password">Oassword</label>
+        <input type="password" name="password" id="pass" />
+
+        <label for="keep">Keep me sign in</label>
+
+        <a href="#">Forget your username?</a>
+        <a href="#">Forget your password?</a>
+      </form>
       <div id="join">
         <section id="join-content">
           <h2>Join our rewards</h2>
