@@ -15,28 +15,25 @@ body {
 #logo {
   width: 2em;
   height: 2em;
-  margin: 1.1em;
-  /* left: 0; */
-  /* position: absolute; */
+  margin: 1rem;
   background-color: rgba(196, 196, 196, 1);
   border: 0.1em solid rgba(196, 196, 196, 1);
   border-radius: 50%;
 }
 #picture {
   width: 31%;
-  margin: 1em, 0, 0, 1.5em;
+  margin: 1rem, 0, 0, 1rem;
 }
-
 section {
   width: 60%;
   height: inherit;
-  margin-top: 2.5rem;
   margin-left: 5.5em;
 }
 h1 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0.25em;
+  margin-top: 0;
 }
 h2 {
   font-weight: 600;
@@ -48,35 +45,35 @@ header p {
 }
 header p a {
   color: rgba(51, 51, 51, 1);
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0;
 }
 form {
-  width: 43em;
+  width: 90%;
   height: auto;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.2em;
+  font-size: 1rem;
+  line-height: 1.2rem;
   color: rgba(102, 102, 102, 1);
 }
 input {
-  height: 3em;
-  width: 43rem;
-  margin-bottom: 1.375em;
-  border-radius: 0.75em;
-}
-.input {
-  width: 31.25rem;
-  height: 3.5rem;
-  border: 1px solid rgba(102, 102, 102, 0.35);
+  width: 97%;
+  height: 2.5rem;
+  margin-bottom: 1.375rem;
   border-radius: 0.75rem;
+}
+label i {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 [type~="password"] {
   margin-bottom: 0.3rem;
 }
 .show {
-  width: 31.25rem;
+  width: 95%;
   height: 1.6875rem;
   display: flex;
   justify-content: space-between;
@@ -86,15 +83,12 @@ input {
   height: 4rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   margin-bottom: 2rem;
-
-  width: 193px;
-  height: 40px;
 }
-#check p {
+#check p,
+i {
   color: rgb(51, 51, 51);
   font-weight: 400;
   font-size: 1rem;
@@ -107,14 +101,13 @@ input {
   height: 1.2rem;
   margin: 0.6875rem, 0.6875rem;
 }
-
 .list {
   width: 28%;
   line-height: 0.8rem;
   margin-bottom: 1rem;
 }
 ul {
-  width: 49sem;
+  width: 100%;
   display: flex;
   margin: 0;
   padding: 0;
@@ -123,7 +116,8 @@ li {
   display: inline-block;
   padding: 0.2rem;
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+  line-height: 0.625rem;
 }
 
 p a {
@@ -149,39 +143,132 @@ p a {
 /* +++++++++++++++++++++++
   The Signin Page
   +++++++++++++++++++++++++ */
+.contain {
+  margin: auto;
+}
 #logo-bar {
-  height: 4.5rem;
+  height: 3.5rem;
   margin: 0;
   padding: 0;
   border-bottom: 0.0625rem solid rgba(102, 102, 102, 0.25);
   display: flex;
 }
-
 #logo-bar span {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
-  margin-left: 2.5rem;
+  margin-left: 2rem;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
   background-color: #c4c4c4;
 }
-
 #signin {
-  width: 44.7rem;
+  width: 44.7%;
   margin: auto;
   padding: 0;
 }
 #signin h1 {
   text-align: center;
+  margin-bottom: 2.5rem;
 }
+#signin_form {
+  width: 90%;
+  padding: 0.75rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: auto;
+  border: 0.1rem solid rgba(102, 102, 102, 0.35);
+  border-radius: 1.5rem;
+}
+.input {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1.375rem;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  border-radius: 0.75rem;
+}
+#signin_form > p {
+  margin-bottom: 1.5rem;
+}
+/* +++++++++++++++++++++++++++ 
+Signin_below form content
++++++++++++++++++++++++++++ */
+#option {
+  display: flex;
+  flex-direction: row;
+}
+#request {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+#questions {
+  height: 4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
+#checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: rgb(17, 17, 17);
+}
+.forget {
+  width: 11.25rem;
+  color: rgb(17, 17, 17);
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: underline;
+  margin-top: 0.7 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.forget a {
+  width: 20rem;
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+.note {
+  width: 18rem;
+  height: 9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 51, 51);
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.5rem;
+}
+#sign_button {
+  width: 11.25rem;
+  height: 4rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 2rem;
+  float: right;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+#sign_button a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+/* +++++++++++++++++++++++++++ 
++++++++++++loin+++++++++
++++++++++++++++++++++++++++ */
 #join {
   background-color: rgba(196, 196, 196, 0.151);
-  /* text-align: center; */
   border-radius: 1.5rem;
   padding: 0;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-top: 6rem;
 }
 
 #join-content {
@@ -193,7 +280,7 @@ p a {
 
 #join-content h2 {
   margin: 0;
-  color: #111111;
+  color: rgb(17, 17, 17);
   font-size: 1.25rem;
   font-weight: 500;
   font-size: 1.25rem;
@@ -213,8 +300,6 @@ p a {
 #link {
   width: 11.25rem;
   height: 3rem;
-  /* width: 11.25rem;
-  height: 3.5rem; */
   border: 0.0625rem solid rgb(17, 17, 17);
   border-radius: 2.5em;
   padding: 0.4rem;
@@ -224,8 +309,6 @@ p a {
   width: 5.5625rem;
   height: 1.875rem;
   color: rgb(17, 17, 17);
-  /* border: 0.0625rem solid rgb(17, 17, 17);
-  border-radius: 2rem; */
   text-decoration: none;
   font-weight: 400;
   font-size: 1.25rem;

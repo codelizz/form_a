@@ -27,104 +27,70 @@
     <div id="logo-bar">
       <span></span>
     </div>
+    <!-- The signin section -->
     <article id="signin">
-      <h1>Sign in or create an account</h1>
-      <form action="#" method="post">
-        <p>*indicates required field</p>
-        <label for="username">*User name or email address</label>
-        <input type="text" name="username" id="user" required />
+      <div class="contain">
+        <h1>Sign in or create an account</h1>
+        <form action="#" method="post" id="signin_form">
+          <p>*indicates required field</p>
+          <label for="username">*User name or email address</label>
+          <input type="text" name="username" id="user" required class="input" />
 
-        <label for="password">Oassword</label>
-        <input type="password" name="password" id="pass" />
+          <div class="show">
+            <label for="password">*Password</label>
+            <span><img src="hide.png" alt="eye" />Hide</span>
+          </div>
+          <input type="password" name="password" id="pass" class="input" />
 
-        <label for="keep">Keep me sign in</label>
+          <div id="option">
+            <div id="request">
+              <div>
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                  required
+                /><label for="checkbox"
+                  >Keep me sign in <i class="fa-solid fa-circle-question"></i
+                ></label>
+              </div>
 
-        <a href="#">Forget your username?</a>
-        <a href="#">Forget your password?</a>
-      </form>
-      <div id="join">
-        <section id="join-content">
-          <h2>Join our rewards</h2>
-          <div id="para">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              lobortis maximus Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Morbi lobortis maximus
+              <div id="questions">
+                <a href="#" class="forget">Forget your username?</a>
+                <a href="#" class="forget">Forget your password?</a>
+              </div>
+            </div>
+
+            <p class="note">
+              kecking this box will reduce the number of times you're to sign
+              in. Tp keep your accpount secure, use this option only when your
+              personal devices.
             </p>
           </div>
-          <div id="link">
-            <a href="#">Join now</a>
+
+          <div id="sign_button">
+            <a href="#">Signin</a>
           </div>
-        </section>
+        </form>
+
+        <!-- The Join section -->
+
+        <div id="join">
+          <section id="join-content">
+            <h2>Join our rewards</h2>
+            <div id="para">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                lobortis maximus Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Morbi lobortis maximus
+              </p>
+            </div>
+            <div id="link">
+              <a href="#">Join now</a>
+            </div>
+          </section>
+        </div>
       </div>
     </article>
   </body>
 </html>
-
-<!-- <div id="contain_signin">
-        <section id="first">
-          <header>
-            <h2>Sign in or create an account</h2>
-            <p>*Indidcates required field</p>
-          </header>
-          <div id="main"></div>
-          <form action="#" method="get">
-            <label for="username">*User name or email address</label>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              required
-              class="input"
-            />
-
-            <div class="show">
-              <label for="password">*Password</label>
-              <span><img src="hide.png" alt="eye" />show</span>
-            </div>
-            <input
-              type="password"
-              name="password"
-              id="signin_pass"
-              class="input"
-              pattern="^(?=.*\d)(?=.*[!@#($%^&)*])(?=.*[a-z])(?=.*[A-Z]).{8,}$"
-            />
-
-            <div id="important">
-              <div id="forget">
-                <div id="check">
-                  <input type="checkbox" name="remember" id="remember" />
-                  <label for="remember"
-                    >keep me sign in
-                    <i class="fa fa-circle-question"></i>
-                  </label>
-                </div>
-                <a href="reset username">Forgot username?</a>
-                <a href="resetpassword">Forgot password?</a>
-              </div>
-
-              <p id="alert">
-                Checking this box will reduce the number of times you"re asked
-                to sign in. To keep your account secure, use this option only on
-                your personal devices.
-              </p>
-            </div>
-
-            <input type="submit" value="Sign in" id="signin" />
-            <button id="signin"><a href="login.html"></a>Sign in</button>    -->
-<!-- </form>
-        </section>
-      </div>
-
-      <section id="second">
-        <div id="join_info">
-          <h3>Join our rewards</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Morbi lobortis maximus
-          </p>
-        </div>
-
-        <button id="join"><a href="login.html"></a>Join now</button>
-      </section> -->
